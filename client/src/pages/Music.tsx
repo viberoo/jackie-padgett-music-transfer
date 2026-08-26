@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 import SongCard from "@/components/SongCard";
 import { uniqueSongs, genres, SONG_PRICE } from "@/lib/songs";
 
-const HERO_BG = "/manus-storage/jackie-hero-bg-N8ZNAqrmwEWFteESJzHbg5_03ec5d58.webp";
+const HERO_BG = "/assets/jackie-hero-bg-N8ZNAqrmwEWFteESJzHbg5.webp";
 
 export default function Music() {
   const [activeGenre, setActiveGenre] = useState("All");

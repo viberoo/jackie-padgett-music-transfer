@@ -6,7 +6,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { poems } from "@/lib/poems";
 
-const POEMS_BG = "/manus-storage/jackie-poems-bg-3jn8zbJgKVqVhmizDdnWao_129ab597.webp";
+const POEMS_BG = "/assets/jackie-poems-bg-3jn8zbJgKVqVhmizDdnWao.webp";
 
 export default function Poems() {
   return (

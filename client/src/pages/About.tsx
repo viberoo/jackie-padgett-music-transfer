@@ -7,8 +7,8 @@ import { ChevronRight, Mountain, Bike, Music2 } from "lucide-react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
-const JACKIE_PHOTO = "/manus-storage/jackie-photo_b3d538f9.png";
-const OKLAHOMA_BG = "/manus-storage/jackie-about-bg-BLyktp7yJCvay8T9SndkY6_b178f4b4.webp";
+const JACKIE_PHOTO = "/assets/jackie-photo.png";
+const OKLAHOMA_BG = "/assets/jackie-about-bg-BLyktp7yJCvay8T9SndkY6.webp";
 
 const hobbies = [
   {

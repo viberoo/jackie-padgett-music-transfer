@@ -10,9 +10,9 @@ import Footer from "@/components/Footer";
 import SongCard from "@/components/SongCard";
 import { uniqueSongs } from "@/lib/songs";
 
-const HERO_BG = "/manus-storage/jackie-hero-bg-N8ZNAqrmwEWFteESJzHbg5_03ec5d58.webp";
-const JACKIE_PHOTO = "/manus-storage/jackie-photo_b3d538f9.png";
-const OKLAHOMA_BG = "/manus-storage/jackie-about-bg-BLyktp7yJCvay8T9SndkY6_b178f4b4.webp";
+const HERO_BG = "/assets/jackie-hero-bg-N8ZNAqrmwEWFteESJzHbg5.webp";
+const JACKIE_PHOTO = "/assets/jackie-photo.png";
+const OKLAHOMA_BG = "/assets/jackie-about-bg-BLyktp7yJCvay8T9SndkY6.webp";
 
 const featuredSongs = uniqueSongs.filter(s => s.featured).slice(0, 5);
 

@@ -4,7 +4,7 @@
 import { Link } from "wouter";
 import { Music2 } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/jackie-logo-icon-kRWDYMtJQCydpd4dHudsyw_23347155.webp";
+const LOGO_URL = "/assets/jackie-logo-icon-kRWDYMtJQCydpd4dHudsyw.webp";
 
 export default function Footer() {
   return (
