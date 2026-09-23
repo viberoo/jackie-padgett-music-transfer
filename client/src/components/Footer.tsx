@@ -121,6 +121,15 @@ export default function Footer() {
           }}
         >
           © {new Date().getFullYear()} Jackie Padgett Music. All rights reserved.
+          <span aria-hidden="true"> · </span>
+          <a
+            href="https://www.jrpmts.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-amber-400"
+          >
+            Created by JRPMTS
+          </a>
         </div>
       </div>
     </footer>

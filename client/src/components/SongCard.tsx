@@ -1,12 +1,10 @@
 // SongCard — Warm Americana Roadhouse design
-// Displays song cover art, title, genre, and a Buy $1.29 CTA
-// Exact-copy rule: preserve source proportions, amber actions, Suno links, hover motion, and toast behavior.
+// Displays song cover art, title, genre, and a listening link.
+// Preserves source proportions, Suno links, and hover motion without a purchase control.
 
 import { useState } from "react";
-import { ShoppingCart, Play, ExternalLink } from "lucide-react";
-import { toast } from "sonner";
+import { Play, ExternalLink } from "lucide-react";
 import type { Song } from "@/lib/songs";
-import { SONG_PRICE } from "@/lib/songs";
 
 interface SongCardProps {
   song: Song;
@@ -15,16 +13,6 @@ interface SongCardProps {
 
 export default function SongCard({ song, index = 0 }: SongCardProps) {
   const [imgError, setImgError] = useState(false);
-
-  const handleBuy = (e: React.MouseEvent) => {
-    e.preventDefault();
-    // Open Suno page for now — in production this would integrate a payment processor
-    window.open(song.sunoUrl, "_blank", "noopener,noreferrer");
-    toast.success(`Opening "${song.title}" on Suno`, {
-      description: "You can listen and download from Suno.",
-      duration: 3000,
-    });
-  };
 
   return (
     <div
@@ -108,34 +96,20 @@ export default function SongCard({ song, index = 0 }: SongCardProps) {
           {song.title}
         </h3>
 
-        {/* Actions */}
-        <div className="flex items-center gap-2">
-          <button
-            onClick={handleBuy}
-            className="buy-btn flex-1 flex items-center justify-center gap-1.5 py-2 rounded text-xs font-bold tracking-wide transition-all duration-150 active:scale-95"
-            style={{
-              background: "oklch(0.72 0.18 65)",
-              color: "oklch(0.15 0.03 40)",
-              fontFamily: "'Lato', sans-serif",
-            }}
-          >
-            <ShoppingCart size={13} />
-            Buy ${SONG_PRICE.toFixed(2)}
-          </button>
-          <a
-            href={song.sunoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 rounded transition-colors"
-            style={{
-              background: "oklch(0.28 0.05 40)",
-              color: "oklch(0.72 0.04 70)",
-            }}
-            title="Listen on Suno"
-          >
-            <ExternalLink size={13} />
-          </a>
-        </div>
+        <a
+          href={song.sunoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-1.5 py-2 rounded text-xs font-bold tracking-wide transition-colors active:scale-95"
+          style={{
+            background: "oklch(0.28 0.05 40)",
+            color: "oklch(0.72 0.04 70)",
+            fontFamily: "'Lato', sans-serif",
+          }}
+        >
+          <ExternalLink size={13} />
+          Listen on Suno
+        </a>
       </div>
     </div>
   );

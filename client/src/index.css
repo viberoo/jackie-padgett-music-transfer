@@ -168,15 +168,6 @@
     box-shadow: 0 8px 32px oklch(0.72 0.18 65 / 25%);
   }
 
-  /* Buy button pulse */
-  @keyframes amber-pulse {
-    0%, 100% { box-shadow: 0 0 0 0 oklch(0.72 0.18 65 / 40%); }
-    50% { box-shadow: 0 0 0 6px oklch(0.72 0.18 65 / 0%); }
-  }
-  .buy-btn {
-    animation: amber-pulse 2.5s ease-in-out infinite;
-  }
-
   /* Fade-slide in animation */
   @keyframes fade-slide-up {
     from { opacity: 0; transform: translateY(24px); }
