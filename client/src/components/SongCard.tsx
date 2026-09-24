@@ -1,6 +1,6 @@
 // SongCard — Warm Americana Roadhouse design
 // Displays song cover art, title, genre, and a listening link.
-// Preserves source proportions, Suno links, and hover motion without a purchase control.
+// Preserves source proportions, Suno links, and hover motion with direct listening access.
 
 import { useState } from "react";
 import { Play, ExternalLink } from "lucide-react";

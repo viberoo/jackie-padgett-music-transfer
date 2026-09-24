@@ -1,5 +1,5 @@
 // Jackie Padgett Music — Song Catalog
-// Exact-copy content: preserves archived ordering, duplicate IDs, genre labels, featured flags, $1.29 price, and Suno destinations.
+// Exact-copy content: preserves archived ordering, duplicate IDs, genre labels, featured flags, and Suno destinations.
 // Cover art is served only from destination-managed assets; no prior-account or third-party image hotlinks remain.
 
 export interface Song {
@@ -10,8 +10,6 @@ export interface Song {
   genre: string;
   featured?: boolean;
 }
-
-export const SONG_PRICE = 1.29;
 
 const COVER_BY_ID: Record<string, string> = {
   "0140198e-547b-4a06-b82b-cc5ac72ccbb7": "/assets/image_0140198e-547b-4a06-b82b-cc5ac72ccbb7.jpeg",

@@ -70,7 +70,7 @@ export default function Home() {
                 textShadow: "0 1px 8px oklch(0.10 0.03 40 / 0.5)",
               }}
             >
-              Songs that carry what words alone can't hold. Heartfelt country &amp; americana music — own a song for just $1.29.
+              Songs that carry what words alone can't hold. Heartfelt country &amp; americana music from the heart of Oklahoma.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -213,7 +213,7 @@ export default function Home() {
                   fontFamily: "'Lato', sans-serif",
                 }}
               >
-                Own This Song — $1.29
+                Listen to Song
                 <ChevronRight size={16} />
               </Link>
             </div>
@@ -313,13 +313,13 @@ export default function Home() {
             className="text-3xl md:text-4xl font-bold mb-3"
             style={{ fontFamily: "'Playfair Display', serif", color: "oklch(0.15 0.03 40)" }}
           >
-            Own a piece of the music.
+            Listen to the music.
           </h2>
           <p
             className="text-base mb-8 opacity-80"
             style={{ color: "oklch(0.20 0.04 40)", fontFamily: "'Lato', sans-serif" }}
           >
-            Download any song for $1.29 and listen whenever you want — no streaming required.
+            Listen to any song on Suno and discover music that stays with you.
           </p>
           <Link
             href="/music"

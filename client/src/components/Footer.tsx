@@ -107,7 +107,7 @@ export default function Footer() {
               className="mt-4 text-xs leading-relaxed"
               style={{ color: "oklch(0.55 0.03 65)", fontFamily: "'Lato', sans-serif" }}
             >
-              Songs available for download at $1.29 each. Own the music, play it whenever you want.
+              Listen to Jackie Padgett's original country and americana music on Suno.
             </p>
           </div>
         </div>
