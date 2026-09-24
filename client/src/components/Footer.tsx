@@ -1,5 +1,5 @@
 // Footer — Warm Americana Roadhouse design
-// Exact-copy rule: preserve the original mark, approved labels, public links, pricing copy, and copyright treatment.
+// Exact-copy rule: preserve the original mark, approved labels, public links, and copyright treatment.
 
 import { Link } from "wouter";
 import { Music2 } from "lucide-react";
