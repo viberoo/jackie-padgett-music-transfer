@@ -8,7 +8,7 @@ import { Search, Music2 } from "lucide-react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import SongCard from "@/components/SongCard";
-import { uniqueSongs, genres, SONG_PRICE } from "@/lib/songs";
+import { uniqueSongs, genres } from "@/lib/songs";
 
 const HERO_BG = "/assets/jackie-hero-bg-N8ZNAqrmwEWFteESJzHbg5.webp";
 
@@ -61,12 +61,6 @@ export default function Music() {
           >
             The Music
           </h1>
-          <p
-            className="text-base md:text-lg max-w-xl mx-auto"
-            style={{ color: "oklch(0.75 0.03 75)", fontFamily: "'Lato', sans-serif" }}
-          >
-            Every song available for download at <strong style={{ color: "oklch(0.72 0.18 65)" }}>${SONG_PRICE.toFixed(2)}</strong>. Listen on Suno, then own it forever.
-          </p>
         </div>
       </section>
 
@@ -145,54 +139,6 @@ export default function Music() {
               ))}
             </div>
           )}
-        </div>
-      </section>
-
-      {/* ── HOW IT WORKS ── */}
-      <section
-        className="py-16"
-        style={{ background: "oklch(0.20 0.05 40)", borderTop: "1px solid oklch(0.72 0.18 65 / 12%)" }}
-      >
-        <div className="container">
-          <h2
-            className="text-2xl md:text-3xl font-bold text-center mb-10"
-            style={{ fontFamily: "'Playfair Display', serif", color: "oklch(0.94 0.02 80)" }}
-          >
-            How to Get Your Song
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            {[
-              { step: "1", title: "Find Your Song", desc: "Browse the catalog above and click any song you love." },
-              { step: "2", title: "Listen on Suno", desc: "Preview the full song for free on Suno before you buy." },
-              { step: "3", title: "Download for $1.29", desc: "Purchase the download directly on Suno and own it forever." },
-            ].map(({ step, title, desc }) => (
-              <div key={step} className="text-center">
-                <div
-                  className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-bold"
-                  style={{
-                    background: "oklch(0.72 0.18 65 / 15%)",
-                    border: "2px solid oklch(0.72 0.18 65 / 40%)",
-                    color: "oklch(0.72 0.18 65)",
-                    fontFamily: "'Playfair Display', serif",
-                  }}
-                >
-                  {step}
-                </div>
-                <h3
-                  className="font-bold mb-2"
-                  style={{ fontFamily: "'Playfair Display', serif", color: "oklch(0.94 0.02 80)" }}
-                >
-                  {title}
-                </h3>
-                <p
-                  className="text-sm leading-relaxed"
-                  style={{ color: "oklch(0.68 0.04 70)", fontFamily: "'Lato', sans-serif" }}
-                >
-                  {desc}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

@@ -96,7 +96,7 @@ export default function NavBar() {
               letterSpacing: "0.05em",
             }}
           >
-            Buy Songs
+            Listen to Songs
           </a>
         </nav>
 
@@ -163,7 +163,7 @@ export default function NavBar() {
                 fontFamily: "'Lato', sans-serif",
               }}
             >
-              Buy Songs — $1.29 each
+              Listen to Songs
             </a>
           </div>
         </div>
