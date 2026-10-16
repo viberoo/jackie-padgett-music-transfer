@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 
 const LOGO_URL = "/assets/jackie-logo-icon-kRWDYMtJQCydpd4dHudsyw.webp";
+const EMAIL_SIGNUP_URL = "https://links.jrpmts.com/widget/form/eLyv096jHxJTfvqtEpQd";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -98,6 +99,20 @@ export default function NavBar() {
           >
             Listen to Songs
           </a>
+          <a
+            href={EMAIL_SIGNUP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded text-sm font-bold tracking-wide transition-all duration-200 active:scale-95"
+            style={{
+              fontFamily: "'Lato', sans-serif",
+              border: "1px solid oklch(0.72 0.18 65 / 55%)",
+              color: "oklch(0.82 0.18 65)",
+              letterSpacing: "0.05em",
+            }}
+          >
+            Join Email List
+          </a>
         </nav>
 
         {/* Mobile hamburger */}
@@ -164,6 +179,19 @@ export default function NavBar() {
               }}
             >
               Listen to Songs
+            </a>
+            <a
+              href={EMAIL_SIGNUP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-center px-5 py-3 mt-3 rounded text-sm font-bold tracking-wide"
+              style={{
+                border: "1px solid oklch(0.72 0.18 65 / 55%)",
+                color: "oklch(0.82 0.18 65)",
+                fontFamily: "'Lato', sans-serif",
+              }}
+            >
+              Join Email List
             </a>
           </div>
         </div>

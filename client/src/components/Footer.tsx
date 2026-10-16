@@ -5,6 +5,7 @@ import { Link } from "wouter";
 import { Music2 } from "lucide-react";
 
 const LOGO_URL = "/assets/jackie-logo-icon-kRWDYMtJQCydpd4dHudsyw.webp";
+const EMAIL_SIGNUP_URL = "https://links.jrpmts.com/widget/form/eLyv096jHxJTfvqtEpQd";
 
 export default function Footer() {
   return (
@@ -109,6 +110,19 @@ export default function Footer() {
             >
               Listen to Jackie Padgett's original country and americana music on Suno.
             </p>
+            <a
+              href={EMAIL_SIGNUP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex mt-4 px-4 py-2 rounded text-xs font-bold tracking-wide transition-all duration-150 active:scale-95"
+              style={{
+                background: "oklch(0.72 0.18 65)",
+                color: "oklch(0.15 0.03 40)",
+                fontFamily: "'Lato', sans-serif",
+              }}
+            >
+              Join the Email List
+            </a>
           </div>
         </div>
 
