@@ -47,6 +47,84 @@ const newAlbums = [
     image: "/assets/album-the-things-we-dont-say.jpeg",
     href: "https://suno.com/album/b72f2b3a-fd8a-4b70-82fa-585f1aea70ab",
   },
+  {
+    title: "Wildflower Strong",
+    description: "A heartfelt new release celebrating resilience, growth, and the strength that blooms through every season.",
+    image: "/assets/album-wildflower-strong.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/wildflower-strong?ref=release",
+  },
+  {
+    title: "River Don’t Bend",
+    description: "A flowing country release about staying true to your path and carrying on through changing waters.",
+    image: "/assets/album-river-dont-bend.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/river-dont-bend?ref=release",
+  },
+  {
+    title: "Built From the Hills",
+    description: "A rootsy country release grounded in home, hard-earned strength, and the landscapes that shape us.",
+    image: "/assets/album-built-from-the-hills.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/built-from-the-hills?ref=release",
+  },
+  {
+    title: "Where the Ancestors Sing",
+    description: "A reflective release honoring family, memory, and the voices that continue through generations.",
+    image: "/assets/album-where-the-ancestors-sing.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/where-the-ancestors-sing?ref=release",
+  },
+  {
+    title: "Momma Dragged Me There",
+    description: "A story-rich country release shaped by family, perseverance, and the places that leave a mark.",
+    image: "/assets/album-momma-dragged-me-there.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/momma-dragged-me-there?ref=release",
+  },
+  {
+    title: "They Were Somebody Once",
+    description: "A thoughtful release about remembrance, dignity, and the lives behind the stories we carry.",
+    image: "/assets/album-they-were-somebody-once.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/they-were-somebody-once?ref=release",
+  },
+  {
+    title: "You Had Your Chance",
+    description: "A clear-eyed release about turning the page, finding your voice, and choosing what comes next.",
+    image: "/assets/album-you-had-your-chance.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/you-had-your-chance?ref=release",
+  },
+  {
+    title: "I See Mama in My Hands",
+    description: "A tender release about inherited love, family resemblance, and the everyday ways memory lives on.",
+    image: "/assets/album-i-see-mama-in-my-hands.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/i-see-mama-in-my-hands?ref=release",
+  },
+  {
+    title: "She Learned to Stand",
+    description: "An empowering new release about finding balance, courage, and strength after difficult seasons.",
+    image: "/assets/album-she-learned-to-stand.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/she-learned-to-stand?ref=release",
+  },
+  {
+    title: "The House That Raised Us",
+    description: "A nostalgic release honoring the rooms, people, and small moments that make a place feel like home.",
+    image: "/assets/album-the-house-that-raised-us.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/the-house-that-raised-us?ref=release",
+  },
+  {
+    title: "The Things That Didn’t Break Me",
+    description: "A resilient release about surviving hard chapters and discovering what remains strong on the other side.",
+    image: "/assets/album-the-things-that-didnt-break-me.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/the-things-that-didnt-break-me?ref=release",
+  },
+  {
+    title: "The Woman in the Window",
+    description: "A cinematic release inviting reflection on distance, memory, and the quiet stories we observe.",
+    image: "/assets/album-the-woman-in-the-window.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/the-woman-in-the-window?ref=release",
+  },
+  {
+    title: "The Roads That Made Me",
+    description: "A road-worn country release about open highways, hard lessons, and the journey into who we become.",
+    image: "/assets/album-the-roads-that-made-me-distrokid.jpg",
+    href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/the-roads-that-made-me?ref=release",
+  },
 ];
 
 export default function Home() {
@@ -160,7 +238,7 @@ export default function Home() {
               className="text-base md:text-lg leading-relaxed"
               style={{ color: "oklch(0.74 0.03 75)", fontFamily: "'Lato', sans-serif" }}
             >
-              Five new collections from Jackie Padgett, filled with country stories, honest reflections, and songs for every season of the heart. Listen to the latest albums on Suno.
+              Explore the latest albums and releases from Jackie Padgett, filled with country stories, honest reflections, and songs for every season of the heart. Listen across Suno and major streaming services.
             </p>
           </div>
 
