@@ -4,7 +4,7 @@
 
 /** Exact-copy page: preserve the live hero composition, section order, Playfair/Lato hierarchy, amber accents, and source motion. */
 import { Link } from "wouter";
-import { ChevronRight, Music2, BookOpen, User } from "lucide-react";
+import { ChevronRight, Music2, BookOpen, User, Sparkles } from "lucide-react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import SongCard from "@/components/SongCard";
@@ -15,6 +15,39 @@ const JACKIE_PHOTO = "/assets/jackie-photo.png";
 const OKLAHOMA_BG = "/assets/jackie-about-bg-BLyktp7yJCvay8T9SndkY6.webp";
 
 const featuredSongs = uniqueSongs.filter(s => s.featured).slice(0, 5);
+
+const newAlbums = [
+  {
+    title: "The Woman I Became",
+    description: "A warm, reflective collection about becoming, resilience, and the roads that shape us.",
+    image: "/assets/album-the-woman-i-became.jpeg",
+    href: "https://suno.com/album/a70f7c24-e4b9-42c9-8fd1-e1985747b784",
+  },
+  {
+    title: "The Roads That Made Me",
+    description: "Country stories rooted in open roads, hometown memories, and the heart of the journey.",
+    image: "/assets/album-the-roads-that-made-me.jpeg",
+    href: "https://suno.com/album/687d75f3-7dcf-4db1-94a6-7edff43f14fe",
+  },
+  {
+    title: "The Years That Made Her",
+    description: "A soulful country portrait of quiet strength, hard-earned wisdom, and a life fully lived.",
+    image: "/assets/album-the-years-that-made-her.jpeg",
+    href: "https://suno.com/album/144382b4-ef60-48aa-b12c-e5ee9aefabb5",
+  },
+  {
+    title: "A Life Worth Living",
+    description: "Sunlit songs celebrating gratitude, connection, and the beauty in everyday moments.",
+    image: "/assets/album-a-life-worth-living.jpeg",
+    href: "https://suno.com/album/80579449-d1a1-4d20-81a7-c940b3af8aac",
+  },
+  {
+    title: "The Things We Don’t Say",
+    description: "Tender songs for a simpler heart, where feeling, memory, and honesty have room to breathe.",
+    image: "/assets/album-the-things-we-dont-say.jpeg",
+    href: "https://suno.com/album/b72f2b3a-fd8a-4b70-82fa-585f1aea70ab",
+  },
+];
 
 export default function Home() {
   return (
@@ -102,6 +135,74 @@ export default function Home() {
                 Listen Free on Suno
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── NEW ALBUMS ── */}
+      <section className="py-20" style={{ background: "oklch(0.20 0.05 40)", borderTop: "1px solid oklch(0.72 0.18 65 / 14%)", borderBottom: "1px solid oklch(0.72 0.18 65 / 14%)" }}>
+        <div className="container">
+          <div className="max-w-2xl mb-10">
+            <div
+              className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase mb-3"
+              style={{ color: "oklch(0.72 0.18 65)", fontFamily: "'Lato', sans-serif" }}
+            >
+              <Sparkles size={14} />
+              Just released
+            </div>
+            <h2
+              className="text-3xl md:text-5xl font-bold mb-4"
+              style={{ fontFamily: "'Playfair Display', serif", color: "oklch(0.94 0.02 80)" }}
+            >
+              New Albums
+            </h2>
+            <p
+              className="text-base md:text-lg leading-relaxed"
+              style={{ color: "oklch(0.74 0.03 75)", fontFamily: "'Lato', sans-serif" }}
+            >
+              Five new collections from Jackie Padgett, filled with country stories, honest reflections, and songs for every season of the heart. Listen to the latest albums on Suno.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
+            {newAlbums.map(album => (
+              <a
+                key={album.title}
+                href={album.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block rounded-xl overflow-hidden transition-all duration-200 hover:-translate-y-1"
+                style={{ background: "oklch(0.16 0.04 40)", border: "1px solid oklch(0.72 0.18 65 / 18%)" }}
+              >
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={album.image}
+                    alt={`${album.title} album artwork`}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3
+                    className="font-bold leading-tight mb-2"
+                    style={{ fontFamily: "'Playfair Display', serif", color: "oklch(0.94 0.02 80)" }}
+                  >
+                    {album.title}
+                  </h3>
+                  <p
+                    className="text-xs leading-relaxed mb-3"
+                    style={{ color: "oklch(0.68 0.04 70)", fontFamily: "'Lato', sans-serif" }}
+                  >
+                    {album.description}
+                  </p>
+                  <span
+                    className="inline-flex items-center gap-1 text-xs font-bold tracking-wide"
+                    style={{ color: "oklch(0.72 0.18 65)", fontFamily: "'Lato', sans-serif" }}
+                  >
+                    Listen on Suno <ChevronRight size={13} />
+                  </span>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
