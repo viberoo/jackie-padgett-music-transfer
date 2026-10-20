@@ -125,6 +125,84 @@ const newAlbums = [
     image: "/assets/album-the-roads-that-made-me-distrokid.jpg",
     href: "https://distrokid.com/hyperfollow/jackiepadgettmusic/the-roads-that-made-me?ref=release",
   },
+  {
+    title: "If I Could Walk Through My Childhood Home One More Time",
+    description: "A country ballad reflecting on childhood memories, family, and the longing to revisit a former home one more time.",
+    image: "/assets/album-if-i-could-walk-through-my-childhood-home.jpg",
+    href: "https://suno.com/s/RgigCejdOdQ9JsND",
+  },
+  {
+    title: "I Wouldn’t Change a Thing",
+    description: "A country-soul reflection on life’s hardships, treasured memories, and gratitude for the road behind us.",
+    image: "/assets/album-i-wouldnt-change-a-thing.jpg",
+    href: "https://suno.com/s/Nwm9nJleSJnj8PeG",
+  },
+  {
+    title: "Tuesday Afternoon in October",
+    description: "A warm country ballad capturing the nostalgia and quiet beauty of an ordinary October afternoon.",
+    image: "/assets/album-tuesday-afternoon-in-october.jpg",
+    href: "https://suno.com/s/pDUrRee511FZkDhE",
+  },
+  {
+    title: "Some Roads Are Worth Getting Lost On",
+    description: "A reflective song about an unplanned detour, small-town connection, and the memories waiting along the way home.",
+    image: "/assets/album-some-roads-are-worth-getting-lost-on.jpg",
+    href: "https://suno.com/s/qRVJzYnj8kT6D2bk",
+  },
+  {
+    title: "A Little Wild, a Little Wise",
+    description: "A country-soul release about embracing experience, independence, and a life still full of possibility.",
+    image: "/assets/album-a-little-wild-a-little-wise.jpg",
+    href: "https://suno.com/s/mxCqOwUst81j6pzL",
+  },
+  {
+    title: "There’s Always Room at My Table",
+    description: "A country and gospel song offering a welcoming place to belong for anyone feeling weary or alone.",
+    image: "/assets/album-theres-always-room-at-my-table.jpg",
+    href: "https://suno.com/s/G6QyaGjd7Fmk55TZ",
+  },
+  {
+    title: "The Women Who Make Me Laugh",
+    description: "A warm celebration of enduring friendship, shared memories, and the laughter that carries us through.",
+    image: "/assets/album-the-women-who-make-me-laugh.jpg",
+    href: "https://suno.com/s/MlT6efFEccNmdKcg",
+  },
+  {
+    title: "Coffee Before the World Wakes Up",
+    description: "A quiet country-folk ballad about savoring coffee, stillness, and a slow morning before the world begins.",
+    image: "/assets/album-coffee-before-the-world-wakes-up.jpg",
+    href: "https://suno.com/s/kfArRuID1waU1dEt",
+  },
+  {
+    title: "I Know More Now, but I Need Less",
+    description: "A reflective song about finding peace, gratitude, and contentment in a simpler life.",
+    image: "/assets/album-i-know-more-now-but-i-need-less.jpg",
+    href: "https://suno.com/s/nLF0d8jijvh2hqlh",
+  },
+  {
+    title: "When You Stand Where I Stand",
+    description: "A thoughtful song about growing older, releasing what no longer matters, and finding meaning in everyday life.",
+    image: "/assets/album-when-you-stand-where-i-stand.jpg",
+    href: "https://suno.com/s/fs8MVlSJ3sKbZ5GG",
+  },
+  {
+    title: "I See My Mother in Me",
+    description: "A family-centered song reflecting on a mother’s love, memory, and lessons passed across generations.",
+    image: "/assets/album-i-see-my-mother-in-me.jpg",
+    href: "https://suno.com/s/DroJuhhtLkAOW7PH",
+  },
+  {
+    title: "The Older I Get, the More I Love the Quiet Things",
+    description: "A country ballad about finding contentment in everyday quiet moments, family memories, and the passage of time.",
+    image: "/assets/album-the-older-i-get-the-more-i-love-the-quiet-things.jpg",
+    href: "https://suno.com/s/CcrnEhkBXQCruGxf",
+  },
+  {
+    title: "The Hands That Built This House",
+    description: "A reflective song about building a home by hand and the love and memories that make it meaningful.",
+    image: "/assets/album-the-hands-that-built-this-house.jpg",
+    href: "https://suno.com/s/Wnq7m8gymYpcSw9B",
+  },
 ];
 
 export default function Home() {
