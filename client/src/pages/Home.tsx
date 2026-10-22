@@ -209,10 +209,10 @@ const amazonSongs = [
   { title: "Amazon Music release", asin: "B0HBLSHX4Y", href: "https://www.amazon.com/dp/B0HBLSHX4Y" },
   { title: "Amazon Music release", asin: "B0HMJLX1RV", href: "https://www.amazon.com/dp/B0HMJLX1RV" },
   { title: "Amazon Music release", asin: "B0HGYQHVGB", href: "https://www.amazon.com/dp/B0HGYQHVGB" },
-  { title: "You Had Your Chance", asin: "B0HHRC5K4B", href: "https://www.amazon.com/dp/B0HHRC5K4B" },
+  { title: "You Had Your Chance", asin: "B0HHRC5K4B", image: "/assets/album-you-had-your-chance.jpg", href: "https://www.amazon.com/dp/B0HHRC5K4B" },
   { title: "Amazon Music release", asin: "B0HL6NR96J", href: "https://www.amazon.com/dp/B0HL6NR96J" },
   { title: "Amazon Music release", asin: "B0HC7L6QX3", href: "https://www.amazon.com/dp/B0HC7L6QX3" },
-  { title: "The House That Raised Us", asin: "B0HLHC2BPB", href: "https://www.amazon.com/dp/B0HLHC2BPB" },
+  { title: "The House That Raised Us", asin: "B0HLHC2BPB", image: "/assets/album-the-house-that-raised-us.jpg", href: "https://www.amazon.com/dp/B0HLHC2BPB" },
   { title: "Amazon Music release", asin: "B0HL6MQQFF", href: "https://www.amazon.com/dp/B0HL6MQQFF" },
   { title: "Tuning In", asin: "B0HMS8WTGL", href: "https://www.amazon.com/dp/B0HMS8WTGL" },
   { title: "Amazon Music release", asin: "B0HL64NHJL", href: "https://www.amazon.com/dp/B0HL64NHJL" },
@@ -411,11 +411,12 @@ export default function Home() {
                 className="group block rounded-xl p-5 transition-all duration-200 hover:-translate-y-1"
                 style={{ background: "oklch(0.20 0.05 40)", border: "1px solid oklch(0.72 0.18 65 / 18%)" }}
               >
-                <div
-                  className="flex items-center justify-center aspect-square rounded-lg mb-4"
-                  style={{ background: "oklch(0.72 0.18 65 / 12%)", color: "oklch(0.72 0.18 65)" }}
-                >
-                  <Music2 size={38} strokeWidth={1.5} aria-hidden="true" />
+                <div className="flex items-center justify-center aspect-square rounded-lg mb-4 overflow-hidden" style={{ background: "oklch(0.72 0.18 65 / 12%)", color: "oklch(0.72 0.18 65)" }}>
+                  {song.image ? (
+                    <img src={song.image} alt={`${song.title} album artwork`} className="w-full h-full object-cover" />
+                  ) : (
+                    <Music2 size={38} strokeWidth={1.5} aria-hidden="true" />
+                  )}
                 </div>
                 <h3
                   className="font-bold leading-tight mb-2"
