@@ -214,7 +214,7 @@ const amazonSongs = [
   { title: "River Don’t Bend", asin: "B0HC7L6QX3", image: "/assets/album-river-dont-bend.jpg", href: "https://www.amazon.com/dp/B0HC7L6QX3" },
   { title: "The House That Raised Us", asin: "B0HLHC2BPB", image: "/assets/album-the-house-that-raised-us.jpg", href: "https://www.amazon.com/dp/B0HLHC2BPB" },
   { title: "I See Mama in My Hands", asin: "B0HL6MQQFF", image: "/assets/album-i-see-mama-in-my-hands.jpg", href: "https://www.amazon.com/dp/B0HL6MQQFF" },
-  { title: "The Cowboy He Saw in Me", asin: "B0HMS8WTGL", image: "/assets/album-the-cowboy-he-saw-in-me-v2.jpg", href: "https://www.amazon.com/dp/B0HMS8WTGL" },
+  { title: "The Cowboy He Saw in Me", asin: "B0HMS8WTGL", image: "/assets/album-the-cowboy-he-saw-in-me-square-v2.jpg", href: "https://www.amazon.com/dp/B0HMS8WTGL" },
 ];
 
 export default function Home() {
@@ -454,7 +454,7 @@ export default function Home() {
                     <img
                       src={song.image}
                       alt={`${song.title} album artwork`}
-                      className={`w-full h-full ${song.asin === "B0HMS8WTGL" ? "object-contain" : "object-cover"}`}
+                      className="w-full h-full object-cover"
                     />
                   ) : (
                     <Music2 size={38} strokeWidth={1.5} aria-hidden="true" />
