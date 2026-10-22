@@ -214,7 +214,7 @@ const amazonSongs = [
   { title: "River Don’t Bend", asin: "B0HC7L6QX3", image: "/assets/album-river-dont-bend.jpg", href: "https://www.amazon.com/dp/B0HC7L6QX3" },
   { title: "The House That Raised Us", asin: "B0HLHC2BPB", image: "/assets/album-the-house-that-raised-us.jpg", href: "https://www.amazon.com/dp/B0HLHC2BPB" },
   { title: "I See Mama in My Hands", asin: "B0HL6MQQFF", image: "/assets/album-i-see-mama-in-my-hands.jpg", href: "https://www.amazon.com/dp/B0HL6MQQFF" },
-  { title: "Tuning In", asin: "B0HMS8WTGL", href: "https://www.amazon.com/dp/B0HMS8WTGL" },
+  { title: "The Cowboy He Saw in Me", asin: "B0HMS8WTGL", image: "/assets/album-the-cowboy-he-saw-in-me.jpg", href: "https://www.amazon.com/dp/B0HMS8WTGL" },
   { title: "Amazon Music release", asin: "B0HL64NHJL", href: "https://www.amazon.com/dp/B0HL64NHJL" },
 ];
 
