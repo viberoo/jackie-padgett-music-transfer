@@ -451,7 +451,11 @@ export default function Home() {
               >
                 <div className="flex items-center justify-center aspect-square rounded-lg mb-4 overflow-hidden" style={{ background: "oklch(0.72 0.18 65 / 12%)", color: "oklch(0.72 0.18 65)" }}>
                   {song.image ? (
-                    <img src={song.image} alt={`${song.title} album artwork`} className="w-full h-full object-cover" />
+                    <img
+                      src={song.image}
+                      alt={`${song.title} album artwork`}
+                      className={`w-full h-full ${song.asin === "B0HMS8WTGL" ? "object-contain" : "object-cover"}`}
+                    />
                   ) : (
                     <Music2 size={38} strokeWidth={1.5} aria-hidden="true" />
                   )}
