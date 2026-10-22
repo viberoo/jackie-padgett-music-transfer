@@ -215,7 +215,6 @@ const amazonSongs = [
   { title: "The House That Raised Us", asin: "B0HLHC2BPB", image: "/assets/album-the-house-that-raised-us.jpg", href: "https://www.amazon.com/dp/B0HLHC2BPB" },
   { title: "I See Mama in My Hands", asin: "B0HL6MQQFF", image: "/assets/album-i-see-mama-in-my-hands.jpg", href: "https://www.amazon.com/dp/B0HL6MQQFF" },
   { title: "The Cowboy He Saw in Me", asin: "B0HMS8WTGL", image: "/assets/album-the-cowboy-he-saw-in-me.jpg", href: "https://www.amazon.com/dp/B0HMS8WTGL" },
-  { title: "She Learned to Stand", asin: "B0HL64NHJL", image: "/assets/album-she-learned-to-stand.jpg", href: "https://www.amazon.com/dp/B0HL64NHJL" },
 ];
 
 export default function Home() {
