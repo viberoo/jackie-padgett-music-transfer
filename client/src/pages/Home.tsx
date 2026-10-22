@@ -205,6 +205,19 @@ const newAlbums = [
   },
 ];
 
+const amazonSongs = [
+  { title: "Amazon Music release", asin: "B0HBLSHX4Y", href: "https://www.amazon.com/dp/B0HBLSHX4Y" },
+  { title: "Amazon Music release", asin: "B0HMJLX1RV", href: "https://www.amazon.com/dp/B0HMJLX1RV" },
+  { title: "Amazon Music release", asin: "B0HGYQHVGB", href: "https://www.amazon.com/dp/B0HGYQHVGB" },
+  { title: "You Had Your Chance", asin: "B0HHRC5K4B", href: "https://www.amazon.com/dp/B0HHRC5K4B" },
+  { title: "Amazon Music release", asin: "B0HL6NR96J", href: "https://www.amazon.com/dp/B0HL6NR96J" },
+  { title: "Amazon Music release", asin: "B0HC7L6QX3", href: "https://www.amazon.com/dp/B0HC7L6QX3" },
+  { title: "The House That Raised Us", asin: "B0HLHC2BPB", href: "https://www.amazon.com/dp/B0HLHC2BPB" },
+  { title: "Amazon Music release", asin: "B0HL6MQQFF", href: "https://www.amazon.com/dp/B0HL6MQQFF" },
+  { title: "Tuning In", asin: "B0HMS8WTGL", href: "https://www.amazon.com/dp/B0HMS8WTGL" },
+  { title: "Amazon Music release", asin: "B0HL64NHJL", href: "https://www.amazon.com/dp/B0HL64NHJL" },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.18 0.04 40)" }}>
@@ -357,6 +370,71 @@ export default function Home() {
                     Listen on Suno <ChevronRight size={13} />
                   </span>
                 </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── SONGS ON AMAZON ── */}
+      <section className="py-20" style={{ background: "oklch(0.18 0.04 40)", borderBottom: "1px solid oklch(0.72 0.18 65 / 14%)" }}>
+        <div className="container">
+          <div className="max-w-2xl mb-10">
+            <div
+              className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase mb-3"
+              style={{ color: "oklch(0.72 0.18 65)", fontFamily: "'Lato', sans-serif" }}
+            >
+              <Music2 size={14} />
+              Also available on Amazon
+            </div>
+            <h2
+              className="text-3xl md:text-5xl font-bold mb-4"
+              style={{ fontFamily: "'Playfair Display', serif", color: "oklch(0.94 0.02 80)" }}
+            >
+              Songs on Amazon
+            </h2>
+            <p
+              className="text-base md:text-lg leading-relaxed"
+              style={{ color: "oklch(0.74 0.03 75)", fontFamily: "'Lato', sans-serif" }}
+            >
+              Find more Jackie Padgett music on Amazon Music.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
+            {amazonSongs.map(song => (
+              <a
+                key={song.asin}
+                href={song.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block rounded-xl p-5 transition-all duration-200 hover:-translate-y-1"
+                style={{ background: "oklch(0.20 0.05 40)", border: "1px solid oklch(0.72 0.18 65 / 18%)" }}
+              >
+                <div
+                  className="flex items-center justify-center aspect-square rounded-lg mb-4"
+                  style={{ background: "oklch(0.72 0.18 65 / 12%)", color: "oklch(0.72 0.18 65)" }}
+                >
+                  <Music2 size={38} strokeWidth={1.5} aria-hidden="true" />
+                </div>
+                <h3
+                  className="font-bold leading-tight mb-2"
+                  style={{ fontFamily: "'Playfair Display', serif", color: "oklch(0.94 0.02 80)" }}
+                >
+                  {song.title}
+                </h3>
+                <p
+                  className="text-xs leading-relaxed mb-3"
+                  style={{ color: "oklch(0.62 0.04 70)", fontFamily: "'Lato', sans-serif" }}
+                >
+                  Amazon Music · {song.asin}
+                </p>
+                <span
+                  className="inline-flex items-center gap-1 text-xs font-bold tracking-wide"
+                  style={{ color: "oklch(0.72 0.18 65)", fontFamily: "'Lato', sans-serif" }}
+                >
+                  Listen on Amazon <ChevronRight size={13} />
+                </span>
               </a>
             ))}
           </div>
