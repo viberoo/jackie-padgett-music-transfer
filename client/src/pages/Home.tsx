@@ -206,7 +206,7 @@ const newAlbums = [
 ];
 
 const amazonSongs = [
-  { title: "Amazon Music release", asin: "B0HBLSHX4Y", href: "https://www.amazon.com/dp/B0HBLSHX4Y" },
+  { title: "Wildflower Strong", asin: "B0HBLSHX4Y", image: "/assets/album-wildflower-strong.jpg", href: "https://www.amazon.com/dp/B0HBLSHX4Y" },
   { title: "The Woman in the Window", asin: "B0HMJLX1RV", image: "/assets/album-the-woman-in-the-window.jpg", href: "https://www.amazon.com/dp/B0HMJLX1RV" },
   { title: "Tuning In", asin: "B0HGYQHVGB", href: "https://www.amazon.com/dp/B0HGYQHVGB" },
   { title: "You Had Your Chance", asin: "B0HHRC5K4B", image: "/assets/album-you-had-your-chance.jpg", href: "https://www.amazon.com/dp/B0HHRC5K4B" },
