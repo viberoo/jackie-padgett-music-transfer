@@ -208,7 +208,7 @@ const newAlbums = [
 const amazonSongs = [
   { title: "Wildflower Strong", asin: "B0HBLSHX4Y", image: "/assets/album-wildflower-strong.jpg", href: "https://www.amazon.com/dp/B0HBLSHX4Y" },
   { title: "The Woman in the Window", asin: "B0HMJLX1RV", image: "/assets/album-the-woman-in-the-window.jpg", href: "https://www.amazon.com/dp/B0HMJLX1RV" },
-  { title: "Tuning In", asin: "B0HGYQHVGB", href: "https://www.amazon.com/dp/B0HGYQHVGB" },
+  { title: "They Were Somebody Once", asin: "B0HGYQHVGB", image: "/assets/album-they-were-somebody-once.jpg", href: "https://www.amazon.com/dp/B0HGYQHVGB" },
   { title: "You Had Your Chance", asin: "B0HHRC5K4B", image: "/assets/album-you-had-your-chance.jpg", href: "https://www.amazon.com/dp/B0HHRC5K4B" },
   { title: "She Learned to Stand", asin: "B0HL6NR96J", image: "/assets/album-she-learned-to-stand.jpg", href: "https://www.amazon.com/dp/B0HL6NR96J" },
   { title: "River Don’t Bend", asin: "B0HC7L6QX3", image: "/assets/album-river-dont-bend.jpg", href: "https://www.amazon.com/dp/B0HC7L6QX3" },
