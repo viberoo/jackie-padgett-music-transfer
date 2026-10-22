@@ -303,13 +303,52 @@ export default function Home() {
               >
                 Listen Free on Suno
               </a>
+              <a
+                href="#new-albums"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded font-bold text-sm tracking-wide transition-all duration-150 active:scale-95"
+                style={{
+                  background: "oklch(0.94 0.02 80 / 10%)",
+                  border: "1px solid oklch(0.94 0.02 80 / 30%)",
+                  color: "oklch(0.94 0.02 80)",
+                  fontFamily: "'Lato', sans-serif",
+                }}
+              >
+                New Albums
+                <ChevronRight size={16} />
+              </a>
+              <a
+                href="#songs-on-amazon"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded font-bold text-sm tracking-wide transition-all duration-150 active:scale-95"
+                style={{
+                  background: "oklch(0.94 0.02 80 / 10%)",
+                  border: "1px solid oklch(0.94 0.02 80 / 30%)",
+                  color: "oklch(0.94 0.02 80)",
+                  fontFamily: "'Lato', sans-serif",
+                }}
+              >
+                Songs on Amazon
+                <ChevronRight size={16} />
+              </a>
+              <a
+                href="#featured-songs"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded font-bold text-sm tracking-wide transition-all duration-150 active:scale-95"
+                style={{
+                  background: "oklch(0.94 0.02 80 / 10%)",
+                  border: "1px solid oklch(0.94 0.02 80 / 30%)",
+                  color: "oklch(0.94 0.02 80)",
+                  fontFamily: "'Lato', sans-serif",
+                }}
+              >
+                Featured Songs
+                <ChevronRight size={16} />
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── NEW ALBUMS ── */}
-      <section className="py-20" style={{ background: "oklch(0.20 0.05 40)", borderTop: "1px solid oklch(0.72 0.18 65 / 14%)", borderBottom: "1px solid oklch(0.72 0.18 65 / 14%)" }}>
+      <section id="new-albums" className="py-20 scroll-mt-20" style={{ background: "oklch(0.20 0.05 40)", borderTop: "1px solid oklch(0.72 0.18 65 / 14%)", borderBottom: "1px solid oklch(0.72 0.18 65 / 14%)" }}>
         <div className="container">
           <div className="max-w-2xl mb-10">
             <div
@@ -377,7 +416,7 @@ export default function Home() {
       </section>
 
       {/* ── SONGS ON AMAZON ── */}
-      <section className="py-20" style={{ background: "oklch(0.18 0.04 40)", borderBottom: "1px solid oklch(0.72 0.18 65 / 14%)" }}>
+      <section id="songs-on-amazon" className="py-20 scroll-mt-20" style={{ background: "oklch(0.18 0.04 40)", borderBottom: "1px solid oklch(0.72 0.18 65 / 14%)" }}>
         <div className="container">
           <div className="max-w-2xl mb-10">
             <div
@@ -443,7 +482,7 @@ export default function Home() {
       </section>
 
       {/* ── FEATURED SONGS ── */}
-      <section className="py-20" style={{ background: "oklch(0.18 0.04 40)" }}>
+      <section id="featured-songs" className="py-20 scroll-mt-20" style={{ background: "oklch(0.18 0.04 40)" }}>
         <div className="container">
           {/* Section header */}
           <div className="flex items-center justify-between mb-10">
