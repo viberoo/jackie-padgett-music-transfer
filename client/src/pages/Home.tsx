@@ -207,13 +207,13 @@ const newAlbums = [
 
 const amazonSongs = [
   { title: "Amazon Music release", asin: "B0HBLSHX4Y", href: "https://www.amazon.com/dp/B0HBLSHX4Y" },
-  { title: "Amazon Music release", asin: "B0HMJLX1RV", href: "https://www.amazon.com/dp/B0HMJLX1RV" },
-  { title: "Amazon Music release", asin: "B0HGYQHVGB", href: "https://www.amazon.com/dp/B0HGYQHVGB" },
+  { title: "The Woman in the Window", asin: "B0HMJLX1RV", image: "/assets/album-the-woman-in-the-window.jpg", href: "https://www.amazon.com/dp/B0HMJLX1RV" },
+  { title: "Tuning In", asin: "B0HGYQHVGB", href: "https://www.amazon.com/dp/B0HGYQHVGB" },
   { title: "You Had Your Chance", asin: "B0HHRC5K4B", image: "/assets/album-you-had-your-chance.jpg", href: "https://www.amazon.com/dp/B0HHRC5K4B" },
-  { title: "Amazon Music release", asin: "B0HL6NR96J", href: "https://www.amazon.com/dp/B0HL6NR96J" },
-  { title: "Amazon Music release", asin: "B0HC7L6QX3", href: "https://www.amazon.com/dp/B0HC7L6QX3" },
+  { title: "She Learned to Stand", asin: "B0HL6NR96J", image: "/assets/album-she-learned-to-stand.jpg", href: "https://www.amazon.com/dp/B0HL6NR96J" },
+  { title: "River Don’t Bend", asin: "B0HC7L6QX3", image: "/assets/album-river-dont-bend.jpg", href: "https://www.amazon.com/dp/B0HC7L6QX3" },
   { title: "The House That Raised Us", asin: "B0HLHC2BPB", image: "/assets/album-the-house-that-raised-us.jpg", href: "https://www.amazon.com/dp/B0HLHC2BPB" },
-  { title: "Amazon Music release", asin: "B0HL6MQQFF", href: "https://www.amazon.com/dp/B0HL6MQQFF" },
+  { title: "I See Mama in My Hands", asin: "B0HL6MQQFF", image: "/assets/album-i-see-mama-in-my-hands.jpg", href: "https://www.amazon.com/dp/B0HL6MQQFF" },
   { title: "Tuning In", asin: "B0HMS8WTGL", href: "https://www.amazon.com/dp/B0HMS8WTGL" },
   { title: "Amazon Music release", asin: "B0HL64NHJL", href: "https://www.amazon.com/dp/B0HL64NHJL" },
 ];
